@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dehancer Lite Web · Halation Lab</title>
+    <link data-trunk rel="rust" data-target-name="dehancer_lite" data-wasm-import-name="dehancerLite" />
+    <link data-trunk rel="css" href="web/styles.css" />
+    <script data-trunk defer type="module" src="web/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="bg-layer"></div>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Film Lab · WebGPU</p>
+          <h1>Halation Test Page</h1>
+        </div>
+        <p class="hint">Drop or choose an image, then tune presets and sliders in real time.</p>
+      </header>
+
+      <section class="controls-card">
+        <div id="dropzone" class="dropzone" aria-label="Image drop area">
+          <p class="drop-title">Drop image here</p>
+          <p class="drop-subtitle">or choose from files</p>
+          <div class="actions">
+            <button id="chooseBtn" type="button">Choose Image</button>
+            <input id="fileInput" type="file" accept="image/png,image/jpeg,image/jpg,image/webp,image/bmp,image/tiff" />
+          </div>
+        </div>
+        <p id="pageStatus" class="page-status">Booting WebGPU app…</p>
+      </section>
+
+      <section class="canvas-card">
+        <canvas id="halation-canvas"></canvas>
+      </section>
+    </main>
+  </body>
+</html>
