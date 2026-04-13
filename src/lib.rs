@@ -1,7 +1,9 @@
 pub mod app;
 pub mod color;
+pub mod effects;
 pub mod gpu;
 pub mod halation;
+pub mod pipeline;
 
 #[cfg(not(target_arch = "wasm32"))]
 use eframe::egui;
@@ -19,7 +21,7 @@ pub fn run_native() -> eframe::Result<()> {
     }
 
     eframe::run_native(
-        "Dehancer Lite · Halation MVP",
+        "Dehancer Lite · Film Stack MVP",
         options,
         Box::new(|cc| Ok(Box::new(app::HalationApp::new(cc)))),
     )
@@ -124,7 +126,7 @@ pub fn wasm_start() {
         {
             Ok(()) => {
                 set_page_status(
-                    "WebGPU ready. Use presets + sliders in the panel to tune halation.",
+                    "Renderer ready. Load an image, then tune the film stack preset and effect modules.",
                 );
                 dispatch_app_ready();
             }

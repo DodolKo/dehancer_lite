@@ -91,7 +91,7 @@ addEventListener(
 );
 
 addEventListener("DehancerAppReady", () => {
-  setStatus("WebGPU ready. Use presets + sliders in the panel to tune halation.");
+  setStatus("Renderer ready. Use presets + effect modules in the panel.");
 });
 
 if (window.dehancerLite) {

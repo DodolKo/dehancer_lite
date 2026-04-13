@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dehancer Lite Web · Halation Lab</title>
+    <title>Dehancer Lite Web · Film Stack Lab</title>
     
 <script type="module">
-import init, * as bindings from '/dehancer-lite-965a010c9b4b1b24.js';
-const wasm = await init({ module_or_path: '/dehancer-lite-965a010c9b4b1b24_bg.wasm' });
+import init, * as bindings from '/dehancer-lite-6ea62d091e8a1bf2.js';
+const wasm = await init({ module_or_path: '/dehancer-lite-6ea62d091e8a1bf2_bg.wasm' });
 
 
 window.dehancerLite = bindings;
@@ -17,17 +17,17 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
     <link rel="stylesheet" href="/styles-2d10afb6880d4bed.css" integrity="sha384-V0aFjTLQCRtYGrU+tj8QIo4ZYfRJfVlsI8FU1F+hz71fKcsaAphMrfPLYhe1hDIH"/>
-    <script src="/bootstrap-2f2e383324299c96.js" defer integrity="sha384-oQVdpd4ygUAlNPMwf9KVXrU8Eexi7FxFfZ9GviGyv/b0XCMAmmkZOydC1+8MQaSh" type="module"></script>
-  <link rel="modulepreload" href="/dehancer-lite-965a010c9b4b1b24.js" crossorigin="anonymous" integrity="sha384-PGfYNfLMxxR9MqLVsFbK1mbfDmtsU+F0vBYC/CdpRuSBJPcCkXxKRu6xZdVfMGu/"><link rel="preload" href="/dehancer-lite-965a010c9b4b1b24_bg.wasm" crossorigin="anonymous" integrity="sha384-Rln1kx0JS2knrPCObVpW2xzz/vrJqizTGU+XbsY3cmrgp/wGhco0f0v7PRyQcaHG" as="fetch" type="application/wasm"></head>
+    <script src="/bootstrap-36ee852fe21e0814.js" defer integrity="sha384-2AHxwPfVuF5/cKrEyXWTf7JfXQxn8IKf5dKwPgGsGzd4p5TnyRs0Kr5JSeInMIC0" type="module"></script>
+  <link rel="modulepreload" href="/dehancer-lite-6ea62d091e8a1bf2.js" crossorigin="anonymous" integrity="sha384-4NP99fdzedoc9bpcU8An/zbK8w7Zt+ucvzS41Q3TSY+QL8r4l2+wDWu9ZSe081Ou"><link rel="preload" href="/dehancer-lite-6ea62d091e8a1bf2_bg.wasm" crossorigin="anonymous" integrity="sha384-HoIdEH/L0uV+z0T1fVZTg4w2iN5azj1mSBo0t9B0JXt7Yut9bqzPlqcOSBGYxo8x" as="fetch" type="application/wasm"></head>
   <body>
     <div class="bg-layer"></div>
     <main class="app-shell">
       <header class="topbar">
         <div>
           <p class="kicker">Film Lab · WebGPU</p>
-          <h1>Halation Test Page</h1>
+          <h1>Film Stack Test Page</h1>
         </div>
-        <p class="hint">Drop or choose an image, then tune presets and sliders in real time.</p>
+        <p class="hint">Drop or choose an image, then tune presets and effect modules in real time.</p>
       </header>
 
       <section class="controls-card">
